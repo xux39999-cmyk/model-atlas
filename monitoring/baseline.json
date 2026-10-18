@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "https://ai.google.dev/gemini-api/docs/pricing": {
+      "digest": "b9d6873df02552603128d5064229b917f1daf737ed1a352419400a320740ebc9",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+      "characters": 64191,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://console.groq.com/docs/rate-limits": {
+      "digest": "31538e28945e17e08f4bbf9b32ff2a774e136f9a7c68de202bacd6e9c1eb66ae",
+      "finalUrl": "https://console.groq.com/docs/rate-limits",
+      "characters": 5784,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://developers.cloudflare.com/workers-ai/platform/pricing/": {
+      "digest": "961e0604241d6db7e2d25b63ae12ac67a912bcfc3f65fb646bf5a68d46c3154a",
+      "finalUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "characters": 14854,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://help.aliyun.com/zh/model-studio/new-free-quota": {
+      "digest": "85b6046e737645e3120cc7ebf774a9348bb549506c7e186c346a501a9c8e35dc",
+      "finalUrl": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+      "characters": 7065,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://openrouter.ai/docs/api_reference/limits": {
+      "digest": "2ed6321d12e4d8821221968b5ed2395439e3076931a13dfd23fa2d5f57f1be32",
+      "finalUrl": "https://openrouter.ai/docs/api_reference/limits",
+      "characters": 16396,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://docs.mistral.ai/inference/model-lifecycle": {
+      "digest": "969d69446ee21dbadc40b504675632f564cfd3267e828d7973ee4c3545194c48",
+      "finalUrl": "https://docs.mistral.ai/inference/model-lifecycle",
+      "characters": 3407,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://developers.openai.com/api/docs/pricing": {
+      "digest": "1f1422768e14526c01871cb3fc1cb64d62df41cbab5da01c8087db337514aa51",
+      "finalUrl": "https://developers.openai.com/api/docs/pricing",
+      "characters": 20770,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://platform.claude.com/docs/en/about-claude/pricing": {
+      "digest": "06c90c6525749b791ecf53997a3c807adb3ed73673630600c36b0c1ae2284c1d",
+      "finalUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "characters": 29294,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://platform.kimi.com/docs/pricing/chat": {
+      "digest": "1591077225d29ae5655865e7abab5fc7b8ca24986a5d8858039b663d4f49be74",
+      "finalUrl": "https://platform.kimi.com/docs/pricing/chat",
+      "characters": 1444,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    },
+    "https://huggingface.co/docs/inference-providers/pricing": {
+      "digest": "e4e74fec07644173485b29bc5f9d226da4e87d6239330c919ce8cb3360b0f6b8",
+      "finalUrl": "https://huggingface.co/docs/inference-providers/pricing",
+      "characters": 11407,
+      "observedAt": "2026-10-18T12:23:10.787Z",
+      "health": "ok"
+    }
+  }
+}
