@@ -1,0 +1,23 @@
+# Local secrets; keep only a documented example file if added later.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local hosting metadata and dependencies.
+.openai/
+.netlify/
+node_modules/
+
+# Logs, editor settings, and operating-system files.
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# dist/ contains the website source and must remain tracked.
