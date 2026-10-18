@@ -1,0 +1,57 @@
+name: Check official model sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC 02:17 = Beijing 10:17. Scheduled runs can be delayed by GitHub.
+    - cron: '17 2 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: official-source-monitor
+  cancel-in-progress: false
+
+jobs:
+  source-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate catalog and check official sources
+        id: monitor
+        run: |
+          node scripts/check-data.cjs
+          node --test scripts/test-monitor-sources.cjs
+          node scripts/monitor-sources.cjs
+      - name: Save inspection report for this run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-source-report
+          path: monitoring/latest-report.md
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Prepare a review request when something changes
+        if: steps.monitor.outputs.needs_review == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: automation/official-source-review
+          base: main
+          add-paths: |
+            monitoring/baseline.json
+            monitoring/latest-report.md
+          commit-message: 'Report official source changes for review'
+          title: '资料来源检查：请审核网页变化或检查异常'
+          body-path: monitoring/latest-report.md
+          author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
+          draft: true
